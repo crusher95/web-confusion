@@ -1,3 +1,41 @@
 #main-toolbar #activity-button {
   background-image: url(../activity/activity-icon.svg);
 }
+.code{
+	background: #fff;
+	width: 40%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	float: left;
+}
+.display{
+	background: #99FFCC;
+	width: 60%;
+	height: 100%;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	float: right;
+}
+.level{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	right: 20px;
+	background: #fff;
+}
+.levhead{
+	background: #000;
+	height: 30px;
+	font-size: 20px;
+	color: #ccc;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+.levnum{
+	font-size: 60px;
+	text-align: center;
+}
