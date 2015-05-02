@@ -9,6 +9,11 @@
 <link rel="stylesheet" media="screen and (device-width: 1200px) and (device-height: 900px)"
       href="lib/sugar-web/graphics/css/sugar-200dpi.css">
 <link rel="stylesheet" href="css/activity.css">
+<link rel="stylesheet" href="theme/monokai.css">
+<link rel="stylesheet" href="lib/codemirror.css">
+
+<script src="lib/codemirror.js"></script>
+<script src="keymap/sublime.js"></script>
 <script data-main="js/loader" src="lib/require.js"></script>
 </head>
 
@@ -33,7 +38,7 @@
     <div class="html">
       <div class="cheads">HTML</div>
       <div class="textarea">
-        <textarea style="" placeholder="Enter Your HTML Code Here">
+        <textarea style="" placeholder="Enter Your HTML Code Here" id="code" name="code">
         </textarea>
       </div>
     </div>
@@ -43,7 +48,7 @@
     <div class="css">
       <div class="cheads">CSS</div>
       <div class="textarea">
-        <textarea style="" placeholder="Enter Your CSS Code Here">
+        <textarea style="" placeholder="Enter Your CSS Code Here" id="code1" name="code1">
         </textarea>
       </div>
     </div>
@@ -59,6 +64,24 @@
   </div>
 
 </div>
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    lineNumbers: true,
+    styleActiveLine: true,
+    matchBrackets: true
+  });
+  var editor = CodeMirror.fromTextArea(document.getElementById("code1"), {
+    lineNumbers: true,
+    styleActiveLine: true,
+    matchBrackets: true
+  });
+  var choice = document.location.search &&
+               decodeURIComponent(document.location.search.slice(1));
+  if (choice) {
+    input.value = choice;
+    editor.setOption("theme", choice);
+  }
+</script>
 </body>
 
 </html>
