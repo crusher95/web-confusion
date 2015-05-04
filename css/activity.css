@@ -1,3 +1,6 @@
+body{
+	overflow: hidden;
+}
 #main-toolbar #activity-button {
   background-image: url(../activity/activity-icon.svg);
 }
@@ -49,6 +52,7 @@
 	line-height: 20px;
 }
 textarea {
+	z-index: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -57,4 +61,73 @@ textarea {
 	height: 280px;
 	max-height: 300px;
 	resize:none;
+}
+.display .footer{
+	background: #000;
+	position: absolute;
+	left: 58%;
+	bottom: 0px;
+	height: 50px;
+	width: 30%;
+	line-height: 30px;
+}
+.display .footer ul{
+	list-style-type: none;
+	line-height: 30px;
+	position: absolute;
+	top: -5px;
+
+}
+.display .footer li{
+	float: left;
+	text-align: left;
+	line-height: 40px;
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	margin-left: 70px;
+	padding-left: 20px;	
+	border-radius: 50px 50px;
+}
+.display .footer li:hover{
+	background: #ccc;
+}
+#side-menu
+{
+	display: none;
+	z-index: 3;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #000;/*to be changed*/
+	width: 400px;
+	height: 100%;
+}
+#side-menu h2 a{
+	padding-left: 40px; 
+}
+#side-menu li{
+	position: relative;
+	height: 100px;
+	background: #ccc;
+	margin-bottom: 5px;
+	width: 100%;
+}
+#side-menu li:hover{
+	background: #fff;
+}
+#button-side-menu{
+	opacity: 0.4;
+	width: 100px;
+	text-align: center;
+	height: 40px;
+	background: #ccc;
+	z-index: 4;
+	position: absolute;
+	right: 0px;
+	top: 25%;
+	font-size: 30px;
+}
+#button-side-menu:hover{
+	opacity: 1.0;
 }

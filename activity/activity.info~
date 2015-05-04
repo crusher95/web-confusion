@@ -1,6 +1,6 @@
 [Activity]
-name = My Activity
+name = Dear-Diary
 activity_version = 1
-bundle_id = org.sugarlabs.MyActivity
+bundle_id = org.sugarlabs.WebConfusion
 exec = sugar-activity-web
 icon = activity-icon

@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="theme/monokai.css">
 <link rel="stylesheet" href="lib/codemirror.css">
 
+<script src="javascript/main.js"></script>
 <script src="lib/codemirror.js"></script>
 <script src="keymap/sublime.js"></script>
 <script data-main="js/loader" src="lib/require.js"></script>
@@ -33,7 +34,14 @@
   <!-- Replace this message with your own content -->
   
   <div class="code">
-  
+    <a href="#" id="button-side-menu"onclick="sidemenu()">Open</a>
+  <div id="side-menu">
+    <h2 align="center" style="color:#fff;">Choose Your ViewPort<a href="#" onclick="closesidemenu()">X</a></h2>
+    <a href=""><li>1</li></a>
+    <a href=""><li>2</li></a>
+    <a href=""><li>3</li></a>
+    <a href=""><li>4</li></a>
+  </div>
 
     <div class="html">
       <div class="cheads">HTML</div>
@@ -57,10 +65,18 @@
 
 
   <div class="display">
-    <div class="level">
+    <div class="level" style="z-index:2;">
       <div class="levhead">Level</div>
       <div class="levnum">1</div>
     </div>
+    <h1 align="center">ViewPort</h1>
+      <div class="viewport" style="width:600px;height:300px;background:#000; position:absolute;left:50%;top:21%;z-index:1;color:#fff;"><h2 align="center">This is the viewport</h2>The Size FOr this will be variable</div>      
+      <div class="footer">
+        <ul>
+          <a href=""><li>Run</li></a>
+          <a href=""><li>Debug</li></a>
+        </ul>
+      </div>
   </div>
 
 </div>
