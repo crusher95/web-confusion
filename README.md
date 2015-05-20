@@ -3,3 +3,5 @@ This project is similar to turtle confusion activity.It will be used for teachin
 
 
 This Activity Uses CodeMirror API for allowing the user to write code interactively.
+
+This Activity might not be continued as a python activity is beign developed for the same hence no development till the final verdict.
